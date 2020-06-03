@@ -1,9 +1,9 @@
 # spring-security-jwt
 Here i have configured JWT(Json Web Token) Token Based Authentication using spring security and io.jsonwebtoken.jjwt.
 
-##This is a SpringBoot Maven project. Here i have authenticated REST services using JWT token based authentication. for that i have used Spring Boot, Spring Security, MySQL, Spring Data and io.jsonwebtoken.jjwt dependency.
+## This is a SpringBoot Maven project. Here i have authenticated REST services using JWT token based authentication. for that i have used Spring Boot, Spring Security, MySQL, Spring Data and io.jsonwebtoken.jjwt dependency.
 
-#Below i have given description of all classes in the project:
+# Below i have given description of all classes in the project:
 
 - **SpringSecurityJwtApplication.java:** This is a SpringBoot bootstrap class.
 
