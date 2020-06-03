@@ -8,13 +8,12 @@
 
 - **JwtTokenUtil.java:** This is responsible for performing JWT operations like creation and validation of JWT.
 
-- **JwtAuthenticationEntryPoint.java:** This class will extend Spring's AuthenticationEntryPoint class and override its method to commence. 
-                                    It rejects every unauthenticated request and sends error code 401 with user defined error message.
+- **JwtAuthenticationEntryPoint.java:** This class will extend Spring's AuthenticationEntryPoint class and override its method to commence. It rejects every unauthenticated request and sends error code 401 with user defined error message.
                                     
 - **WebSecurityConfig.java:** This class extends the WebSecurityConfigurerAdapter. 
                           This is a convenience class that allows customization to both WebSecurity and HttpSecurity.
-                          In this we will set http security to not to authenticate "/authenticate" and "/register" requests.
-                          and all other requests will pass through JwtRequestFilter to validate their JWT token.
+                          In this i have set http security to not to authenticate "/authenticate" and "/register" requests.
+                          and all other requests must pass through JwtRequestFilter to validate their JWT token.
                         
 - **JwtUserDetailsService.java:** This class is implementing UserDetailsService interface and it is responsible for 
                               providing user details for given username.
