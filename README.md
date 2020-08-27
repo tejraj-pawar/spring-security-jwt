@@ -16,7 +16,7 @@
                           and all other requests must pass through JwtRequestFilter to validate their JWT token.
                         
 - **JwtUserDetailsService.java:** This class is implementing UserDetailsService interface and it is responsible for 
-                              providing user details for given username.
+                              providing user details for given username using database.
                               
 - **JwtAuthenticationController.java:** This is rest controller class. here we have mapped three resources "/authenticate", "/register" 
                                     and "/hello" to respective methods.
