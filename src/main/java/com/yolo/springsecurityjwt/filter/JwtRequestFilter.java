@@ -71,6 +71,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 				SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
 			}
 		}
+		//Causes the next filter in the chain to be invoked, or if the callingfilter is the last filter in the chain, causes the resource at the end of the chain to be invoked.
 		chain.doFilter(request, response);
 	}
 }
