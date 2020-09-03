@@ -57,8 +57,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configure(HttpSecurity httpSecurity) throws Exception {
         // We don't need CSRF for this example
 		httpSecurity.csrf().disable()
+			        .authorizeRequests()
                 // dont authenticate this particular request
-				.authorizeRequests().antMatchers("/authenticate", "/register").permitAll()
+				.antMatchers("/authenticate", "/register").permitAll()
                 // all other requests need to be authenticated
 				.anyRequest().authenticated().and()
                 //It rejects every unauthenticated request and sends error code 401.
